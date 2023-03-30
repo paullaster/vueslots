@@ -12,6 +12,9 @@
           <TestVSlotComponent />
         </HelloWorld>
       </template>
+      <template v-slot:footer>
+        <h2>Footer section of the page:</h2>
+      </template>
     </BaseLayout>
   </div>
 </template>
