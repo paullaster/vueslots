@@ -4,7 +4,7 @@
             <span>{{ item.name }}</span> <br>
             <span>{{ item.price }}</span> <br>
             <img :src="item.image" /> <br>
-
+            <ButtonComponent />
         </li>
     </ul>
 </template>
@@ -12,6 +12,9 @@
 import ButtonComponent from './ButtonCompoent.vue';
 export default {
     name: 'Item',
+    components: {
+        ButtonComponent
+    },
     data() {
         return {
             Items: [
