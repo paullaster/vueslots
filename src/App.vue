@@ -9,6 +9,7 @@
 <script>
 import HelloWorld from "./components/RenderItems.vue";
 import TestVSlotComponent from "./components/TestVSlotComponent.vue";
+import BaseLayout from "./components/BaseLayout.vue";
 export default {
   name: "App",
   components: {
