@@ -1,7 +1,13 @@
 <template>
   <div>
+    <BaseLayout>
+      <template v-slot:header>
+        <h1>Paullaster Okoth</h1>
+        <p>This is the heading of this page</p>
+      </template>
+    </BaseLayout>
     <HelloWorld>
-      <h1>Paullaster Okoth</h1>
+      
       <TestVSlotComponent/>
     </HelloWorld>
   </div>
@@ -14,7 +20,8 @@ export default {
   name: "App",
   components: {
     HelloWorld,
-    TestVSlotComponent
+    TestVSlotComponent,
+    BaseLayout
   },
   data() {
     return {
