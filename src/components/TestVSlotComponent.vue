@@ -1,14 +1,16 @@
 <template>
-    <div>
+    <ul>
+        <li v-for="item in Items" >
 
-    </div>
+        </li>
+    </ul>
 </template>
 <script>
 export default {
     name: 'Item',
     data() {
         return {
-            list: [
+            Items: [
                 {
                     id: 1,
                     name: 'Item 1',
