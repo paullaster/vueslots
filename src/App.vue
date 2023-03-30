@@ -5,11 +5,14 @@
         <h1>Paullaster Okoth</h1>
         <p>This is the heading of this page</p>
       </template>
+      <template v-slot:main>
+        <h2>Main section of the page:</h2>
+        <HelloWorld>
+
+          <TestVSlotComponent />
+        </HelloWorld>
+      </template>
     </BaseLayout>
-    <HelloWorld>
-      
-      <TestVSlotComponent/>
-    </HelloWorld>
   </div>
 </template>
 <script>
