@@ -4,7 +4,9 @@
             <span>{{ item.name }}</span> <br>
             <span>{{ item.price }}</span> <br>
             <img :src="item.image" /> <br>
-            <ButtonComponent />
+            <ButtonComponent>
+                Remove Item
+            </ButtonComponent>
         </li>
     </ul>
 </template>
