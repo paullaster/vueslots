@@ -4,7 +4,7 @@
             <span>{{ item.name }}</span> <br>
             <span>{{ item.price }}</span> <br>
             <img :src="item.image" /> <br>
-            <ButtonComponent :buttonType="submit">
+            <ButtonComponent >
                 Remove Item
             </ButtonComponent>
         </li>
