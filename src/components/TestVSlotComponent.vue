@@ -1,8 +1,8 @@
 <template>
     <ul>
         <ItemComponent v-for="item in Items">
-            <template v-slot:default="someName" >
-                {{ item.price }}
+            <template v-slot:default="itemProps" >
+                {{ item.name }}
             </template>
         </ItemComponent>
     </ul>
