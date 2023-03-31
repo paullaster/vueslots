@@ -1,7 +1,14 @@
 <template>
-    <ItemComponent v-for="item in Items" >
-        <template v-slot:default="item">
-           <span> {{ item.name }}</span><br>
+    <ItemComponent>
+        <template v-for="item in Items">
+          <span>
+            {{ item.name }}
+          </span><br>
+          <span>
+            {{ item.price }}
+          </span><br>
+          <img :src="item.image">
+          <br>
         </template>
     </ItemComponent>
 </template>
