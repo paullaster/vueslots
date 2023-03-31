@@ -2,7 +2,9 @@
     <ul>
         <ItemComponent v-for="item in Items">
             <template v-slot:default="itemProps" >
-                {{ item.name }}
+                <span>{{ item.name }} </span><br />
+                <span>{{ item.price }} </span><br />
+                <img :src="item.image" :alt="item.nme">
             </template>
         </ItemComponent>
     </ul>
