@@ -14,7 +14,7 @@
 
         <h2>Testing user profile</h2>
         <CurrentUser v-slot:default="slotProps">
-          {{ slotProps.user.lastName }}
+          Name: {{ slotProps.user.firstName + " " + slotProps.user.lastName}}
         </CurrentUser>
       </template>
       <template v-slot:footer>

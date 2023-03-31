@@ -17,6 +17,11 @@ export default {
                 email: 'envkt@example.com',
                 password: '123456',
                 lastLoginDate: new Date(),
+            },
+            metaData: {
+                language: "en",
+                country: "US",
+                currency: "USD"
             }
         }
     }
