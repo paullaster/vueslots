@@ -1,6 +1,6 @@
 <template>
     <div >
-        <slot :user="userProfile">
+        <slot :user="userProfile" :otherData="metaData">
             {{ user.firstName }}
         </slot>
     </div>
