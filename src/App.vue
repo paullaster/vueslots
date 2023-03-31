@@ -13,7 +13,7 @@
         </RenderItem>
 
         <h2>Testing user profile</h2>
-
+        <CurrentUser/>
       </template>
       <template v-slot:footer>
         <h2>Footer section of the page:</h2>
@@ -25,13 +25,15 @@
 import RenderItem from "./components/RenderItems.vue";
 import TestVSlotComponent from "./components/TestVSlotComponent.vue";
 import BaseLayout from "./components/BaseLayout.vue";
+import CurrentUser from "./components/CurrentUser.vue";
 export default {
   name: "App",
   components: {
     RenderItem,
     TestVSlotComponent,
-    BaseLayout
-  },
+    BaseLayout,
+    CurrentUser
+},
   data() {
     return {
 

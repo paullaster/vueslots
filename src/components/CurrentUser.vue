@@ -1,7 +1,7 @@
 <template>
-    <div :user="userProfile">
+    <div >
         <slot>
-            {{ user.firstName }}
+            {{ userProfile.firstName }}
         </slot>
     </div>
 </template>
