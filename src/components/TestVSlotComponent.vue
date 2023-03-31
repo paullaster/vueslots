@@ -1,14 +1,5 @@
 <template>
-    <ul>
-        <li v-for="item in Items" :key="item.id" >
-            <span>{{ item.name }}</span> <br>
-            <span>{{ item.price }}</span> <br>
-            <img :src="item.image" /> <br>
-            <ButtonComponent >
-                Remove Item
-            </ButtonComponent>
-        </li>
-    </ul>
+    
 </template>
 <script>
 import ButtonComponent from './ButtonCompoent.vue';
