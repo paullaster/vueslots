@@ -1,6 +1,6 @@
 <template>
-    <div>
-        
+    <div :user="userProfile">
+
     </div>
 </template>
 <script>
