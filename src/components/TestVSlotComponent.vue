@@ -1,12 +1,14 @@
 <template>
-    
+    <ItemComponent />
 </template>
 <script>
 import ButtonComponent from './ButtonCompoent.vue';
+import ItemComponent from './ItemComponent.vue';
 export default {
     name: 'Item',
     components: {
-        ButtonComponent
+        ButtonComponent,
+        ItemComponent
     },
     data() {
         return {
