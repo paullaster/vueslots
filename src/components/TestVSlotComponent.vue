@@ -1,5 +1,9 @@
 <template>
-    <ItemComponent />
+    <ItemComponent v-for="item in Items" >
+        <template >
+           <span> {{ item.name }}</span><br>
+        </template>
+    </ItemComponent>
 </template>
 <script>
 import ButtonComponent from './ButtonCompoent.vue';

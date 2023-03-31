@@ -1,7 +1,7 @@
 <template>
     <ul>
         <li :item="item">
-            <slot>
+            <slot :item="item">
                 {{item.name}}
             </slot>
         </li>
