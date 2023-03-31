@@ -1,7 +1,9 @@
 <template>
     <ul>
-        <li>
-            <slot></slot>
+        <li :item="item">
+            <slot>
+                {{item.name}}
+            </slot>
         </li>
     </ul>
 </template>
