@@ -13,7 +13,7 @@
         </RenderItem>
 
         <h2>Testing user profile</h2>
-        <CurrentUser v-slot:default="slotProps">
+        <CurrentUser v-slot:primaryData="slotProps">
           Name: {{ slotProps.user.firstName + " " + slotProps.user.lastName}}
         </CurrentUser>
       </template>

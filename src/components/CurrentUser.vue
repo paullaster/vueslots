@@ -2,6 +2,7 @@
     <div >
         <slot :user="userProfile" :otherData="metaData" name="primaryData">
             {{ user.firstName }}
+            {{ otherData.language }}
         </slot>
     </div>
 </template>
