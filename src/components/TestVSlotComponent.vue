@@ -1,9 +1,11 @@
 <template>
-   <ul>
-    <ItemComponent v-for="item in Items">
-       
-    </ItemComponent>
-   </ul>
+    <ul>
+        <ItemComponent v-for="item in Items">
+            <template v-slot:default="someName" >
+                {{ item.price }}
+            </template>
+        </ItemComponent>
+    </ul>
 </template>
 <script>
 import ButtonComponent from './ButtonCompoent.vue';
@@ -41,7 +43,7 @@ export default {
                     price: 100,
                     image: 'https://via.placeholder.com/150x150'
                 },
-                
+
             ]
         }
     }
