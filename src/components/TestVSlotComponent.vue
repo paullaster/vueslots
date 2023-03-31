@@ -1,6 +1,6 @@
 <template>
     <ItemComponent v-for="item in Items" >
-        <template >
+        <template v-slot:default="item">
            <span> {{ item.name }}</span><br>
         </template>
     </ItemComponent>
