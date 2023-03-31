@@ -14,7 +14,7 @@
 
         <h2>Testing user profile</h2>
         <CurrentUser v-slot:primaryData='{user, otherData}'>
-          Name: {{ user.firstName + " " + user.lastName}}
+          Name: {{ user.firstName + " " + user.lastName}} <br />
           Language: {{ otherData.language }}
         </CurrentUser>
       </template>
