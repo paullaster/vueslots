@@ -11,6 +11,9 @@
 
           <TestVSlotComponent />
         </RenderItem>
+
+        <h2>Testing user profile</h2>
+
       </template>
       <template v-slot:footer>
         <h2>Footer section of the page:</h2>
