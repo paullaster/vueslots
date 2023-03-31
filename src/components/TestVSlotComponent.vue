@@ -1,15 +1,17 @@
 <template>
     <ItemComponent>
-        <template v-for="item in Items">
-          <span>
-            {{ item.name }}
-          </span><br>
-          <span>
-            {{ item.price }}
-          </span><br>
-          <img :src="item.image">
-          <br>
-        </template>
+        <ul>
+            <template v-for="item in Items">
+                <span>
+                    {{ item.name }}
+                </span><br>
+                <span>
+                    {{ item.price }}
+                </span><br>
+                <img :src="item.image">
+                <br>
+            </template>
+        </ul>
     </ItemComponent>
 </template>
 <script>
@@ -48,7 +50,7 @@ export default {
                     price: 100,
                     image: 'https://via.placeholder.com/150x150'
                 },
-                
+
             ]
         }
     }
